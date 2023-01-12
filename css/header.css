@@ -1,0 +1,118 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+/* ============로고=============== */
+.header__logo {
+  width: 164px;
+  height: 50px;
+  background-image: url(../img/title\ logo.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+/* =================gnb 메뉴=================== */
+.header__gnb {
+  border: 1px solid #000;
+}
+.header__gnb > ul {
+  display: flex;
+}
+/* ===============언어선택 드롭다운 메뉴================= */
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+.button {
+  padding: 10px 40px;
+  font-size: 20px;
+}
+#drop-content {
+  position: absolute;
+  z-index: 1;
+}
+#drop-content a {
+  display: block;
+  margin: 2px 0px 0px 0px;
+  padding: 10px 40px;
+  background-color: #dfdfdf;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+/* ======================hamberger======================== */
+
+.demo .menu-icon {
+  transform: scale(1.5);
+}
+:root {
+  --bar-bg: #212529;
+}
+.menu-icon {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.menu-icon .menu-icon__cheeckbox {
+  display: block;
+  position: relative;
+  position: absolute;
+  z-index: 2;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+}
+.menu-icon div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 22px;
+  height: 12px;
+  margin: auto;
+}
+.menu-icon span {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  border-radius: 1px;
+  background-color: var(--bar-bg, #000);
+  transition: all 0.2s cubic-bezier(0.1, 0.82, 0.76, 0.965);
+}
+.menu-icon span:first-of-type {
+  top: 0;
+}
+.menu-icon span:last-of-type {
+  bottom: 0;
+}
+.menu-icon.active span:first-of-type,
+.menu-icon .menu-icon__cheeckbox:checked + div span:first-of-type {
+  top: 5px;
+  transform: rotate(45deg);
+}
+.menu-icon.active span:last-of-type,
+.menu-icon .menu-icon__cheeckbox:checked + div span:last-of-type {
+  bottom: 5px;
+  transform: rotate(-45deg);
+}
+.menu-icon.active:hover span:first-of-type,
+.menu-icon.active:hover span:last-of-type,
+.menu-icon:hover .menu-icon__cheeckbox:checked + div span:first-of-type,
+.menu-icon:hover .menu-icon__cheeckbox:checked + div span:last-of-type {
+  width: 22px;
+}
+@media (min-width: 1024px) {
+  .menu-icon:hover span:first-of-type {
+    width: 26px;
+  }
+  .menu-icon:hover span:last-of-type {
+    width: 12px;
+  }
+}
+
+/* =====================사이드 메뉴======================= */

@@ -2,6 +2,8 @@ header {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  padding: 24px;
+  box-sizing: border-box;
 }
 /* ============로고=============== */
 .header__logo {
@@ -12,32 +14,59 @@ header {
   background-position: center center;
 }
 /* =================gnb 메뉴=================== */
-.header__gnb {
-  border: 1px solid #000;
-}
+
 .header__gnb > ul {
   display: flex;
+  align-items: center;
 }
+.header__gnb > ul > li {
+  margin: 0 23px;
+}
+.header__gnb > ul > li > a {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.imgwrap {
+  width: 16px;
+  margin-left: 10px;
+}
+.imgwrap > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 /* ===============언어선택 드롭다운 메뉴================= */
 .dropdown {
   display: inline-block;
   position: relative;
 }
 .button {
-  padding: 10px 40px;
-  font-size: 20px;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  font-size: 18px;
+  font-weight: bold;
 }
+
 #drop-content {
   position: absolute;
+  top: 30px;
+  left: -10px;
   z-index: 1;
 }
 #drop-content a {
   display: block;
   margin: 2px 0px 0px 0px;
-  padding: 10px 40px;
-  background-color: #dfdfdf;
+  padding: 10px 20px;
+  border: 1px solid #999999;
   font-size: 20px;
+  color: #1c1c1c;
+  text-align: center;
   text-decoration: none;
+  box-sizing: border-box;
 }
 
 /* ======================hamberger======================== */

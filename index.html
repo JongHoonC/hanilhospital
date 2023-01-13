@@ -13,43 +13,66 @@
   </head>
   <body>
     <header>
-      <div class="header__logo">
-        <a href="/"></a>
-      </div>
-      <div class="header__gnb">
-        <ul>
-          <li><a href="">병원소개</a></li>
-          <li><a href="">진료과 / 지원부서</a></li>
-          <li><a href=""> 센터 / 클리닉</a></li>
-          <li><a href=""> 고객서비스</a></li>
-          <li class="dropdown">
-            <button onclick="dp_menu()" class="button en">
-              KOR
-              <div class="imgwrap">
-                <img src="img/iconmonstr-angel-down-thin-240.png" alt="" />
+      <div class="inr__header">
+        <div class="header__logo">
+          <a href="/"></a>
+        </div>
+        <div class="header__gnb">
+          <ul>
+            <li><a href="">병원소개</a></li>
+            <li><a href="">진료과 / 지원부서</a></li>
+            <li><a href=""> 센터 / 클리닉</a></li>
+            <li><a href=""> 고객서비스</a></li>
+            <li class="dropdown">
+              <button onclick="dp_menu()" class="button en">
+                KOR
+                <div class="imgwrap">
+                  <img src="img/iconmonstr-angel-down-thin-240.png" alt="" />
+                </div>
+              </button>
+              <div style="display: none" id="drop-content">
+                <a href="#" class="en">KOR</a>
+                <a href="#" class="en">EN</a>
               </div>
-            </button>
-            <div style="display: none" id="drop-content">
-              <a href="#" class="en">KOR</a>
-              <a href="#" class="en">EN</a>
-            </div>
-          </li>
-          <li>
-            <div class="h_right_menu">
-              <div class="demo">
-                <div class="menu-icon">
-                  <input class="menu-icon__cheeckbox" type="checkbox" />
-                  <div>
-                    <span></span>
-                    <span></span>
+            </li>
+            <li>
+              <div class="h_right_menu">
+                <div class="demo">
+                  <div class="menu-icon">
+                    <input class="menu-icon__cheeckbox" type="checkbox" />
+                    <div class="icon">
+                      <span></span>
+                      <span></span>
+                    </div>
+                    <div id="mySidenav" class="sidenav">
+                      <a href="#">About</a>
+                      <a href="#">Services</a>
+                      <a href="#">Clients</a>
+                      <a href="#">Contact</a>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </li>
-        </ul>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
+    <section class="section1">
+      <div class="section1__main--title">
+        <h1>사회공헌<span>.</span></h1>
+        <h1>진료 특성화<span>.</span></h1>
+        <h1>신뢰받는 진료<span>.</span></h1>
+        <h1>고객 만족<span>.</span></h1>
+      </div>
+      <div class="section1__circle--box">
+        <div id="empty__circle"></div>
+        <div id="img__circle">
+          <h2></h2>
+        </div>
+      </div>
+    </section>
+    <section class="section2"></section>
   </body>
 </html>
 <script src="js/index.js"></script>

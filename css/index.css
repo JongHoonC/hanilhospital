@@ -1,4 +1,10 @@
 @import url(header.css);
 @import url(section1.css);
 @import url(section2.css);
+@import url(section3.css);
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+.title {
+  font-size: 100px;
+  font-weight: bold;
+}

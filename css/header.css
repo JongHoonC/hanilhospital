@@ -1,13 +1,15 @@
 header {
-  width: 100%;
   position: fixed;
   top: 0;
+  width: 100%;
+  background-color: #fefefe;
 }
 .inr__header {
   display: flex;
   justify-content: space-between;
   padding: 24px;
   box-sizing: border-box;
+  transition: all 0.3s;
 }
 /* ============로고=============== */
 .header__logo {
@@ -44,37 +46,13 @@ header {
 }
 
 /* ===============언어선택 드롭다운 메뉴================= */
-.dropdown {
-  display: inline-block;
-  position: relative;
-}
-.button {
-  display: flex;
-  align-items: center;
-  background-color: transparent;
+select {
+  border: none;
+  outline: none;
   font-size: 18px;
+  font-weight: 500;
   font-weight: bold;
-  transition: all 0.3s;
 }
-
-#drop-content {
-  position: absolute;
-  top: 30px;
-  left: -10px;
-  z-index: 1;
-}
-#drop-content a {
-  display: block;
-  margin: 2px 0px 0px 0px;
-  padding: 10px 20px;
-  border: 1px solid #999999;
-  font-size: 20px;
-  color: #1c1c1c;
-  text-align: center;
-  text-decoration: none;
-  box-sizing: border-box;
-}
-
 /* ======================hamberger======================== */
 
 .demo .menu-icon {
@@ -151,24 +129,25 @@ header {
 }
 
 #mySidenav {
+  display: flex;
+  flex-direction: column;
   position: fixed;
   top: 60px;
   right: -600px;
   z-index: 1;
   width: 200px;
   height: 100vh;
-  box-sizing: border-box;
+  /* background-color: #eaebe4; */
+  background-color: #fefefe;
   text-align: center;
+  box-sizing: border-box;
   transition: all 300ms;
-  display: flex;
-  flex-direction: column;
-  background-color: #eaebe4;
 }
 #mySidenav > a {
+  display: block;
   /* border: 1px solid #000; */
   width: 100%;
   height: auto;
-  display: block;
 }
 
 .menu-icon__cheeckbox:checked + div + #mySidenav {
@@ -183,5 +162,17 @@ header {
   }
   .header__gnb > ul > li > a {
     font-size: 16px;
+  }
+  select {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .gnb {
+    display: none;
+  }
+  .inr__header {
+    padding: 10px 20px;
   }
 }

@@ -1,0 +1,62 @@
+.section3 > .title > span {
+  color: #8dc63f;
+}
+.section3 {
+  overflow: hidden;
+  position: relative;
+  padding: 50px 24px;
+  box-sizing: border-box;
+}
+
+/* =============섹션3 컨텐츠============== */
+
+.mediService__content--wrap {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+  top: -200px;
+  right: -300px;
+  z-index: -2;
+  width: 100%;
+  height: 1934px;
+  border-radius: 100000%;
+  background-color: rgba(245, 245, 245, 60%);
+}
+
+marquee {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  z-index: -3;
+  width: 100%;
+  font-size: 200px;
+  font-weight: bold;
+  color: rgba(217, 217, 217, 50%);
+  transform: translate(-50%);
+}
+
+/* ===============이미지 부분==================== */
+.mediService__content--box {
+  display: flex;
+  flex-direction: column;
+}
+.mediService__content--box > div {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 350px;
+  height: 535px;
+}
+.content--box1 {
+  background-image: url(../img/service-1.png);
+}
+.content--box2 {
+  background-image: url(../img/service-2.png);
+}
+.content--box3 {
+  background-image: url(../img/service-3.png);
+}
+.content--box4 {
+  background-image: url(../img/service-4.png);
+}

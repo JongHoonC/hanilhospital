@@ -19,22 +19,14 @@
         </div>
         <div class="header__gnb">
           <ul>
-            <li><a href="">병원소개</a></li>
-            <li><a href="">진료과 / 지원부서</a></li>
-            <li><a href=""> 센터 / 클리닉</a></li>
-            <li><a href=""> 고객서비스</a></li>
-            <li class="dropdown">
-              <button onclick="dp_menu()" class="button en">
-                KOR
-                <div class="imgwrap">
-                  <img src="img/iconmonstr-angel-down-thin-240.png" alt="" />
-                </div>
-              </button>
-              <div style="display: none" id="drop-content">
-                <a href="#" class="en">KOR</a>
-                <a href="#" class="en">EN</a>
-              </div>
-            </li>
+            <li class="gnb"><a href="">병원소개</a></li>
+            <li class="gnb"><a href="">진료과 / 지원부서</a></li>
+            <li class="gnb"><a href=""> 센터 / 클리닉</a></li>
+            <li class="gnb"><a href=""> 고객서비스</a></li>
+            <select class="en" name="" id="">
+              <option value="">KOR</option>
+              <option value="">EN</option>
+            </select>
             <li>
               <div class="h_right_menu">
                 <div class="demo">
@@ -72,7 +64,58 @@
         </div>
       </div>
     </section>
-    <section class="section2"></section>
+    <section class="section2">
+      <div class="article__wrap">
+        <article class="article__box">
+          <a href="">
+            <img class="article__box--img" src="img/fav-box-icon1_black.png" alt="" />
+            <p>병원 소개</p>
+          </a>
+        </article>
+        <article class="article__box">
+          <a href="">
+            <img class="article__box--img" src="img/fav-box-icon2_black.png" alt="" />
+            <p>진료안내 / 예약</p>
+          </a>
+        </article>
+        <article class="article__box">
+          <a href="">
+            <img class="article__box--img" src="img/fav-box-icon3_black.png" alt="" />
+            <p>건강검진 안내</p>
+          </a>
+        </article>
+        <article class="article__box">
+          <a href="">
+            <img class="article__box--img" src="img/fav-box-icon4_black.png" alt="" />
+            <p>증명서 발급</p>
+          </a>
+        </article>
+      </div>
+    </section>
+    <section class="section3">
+      <h1 class="title en">Medical Service<span>.</span></h1>
+ 
+      <marquee behavior="" direction="">Evolution Evolution Evolution</marquee>
+      <div class="mediService__content--wrap">
+          <div class="mediService__content--box">
+            <div class="content--box1">
+              <p>진료과</p>
+            </div>
+            <div class="content--box2">
+              <p>전문센터</p>
+            </div>
+          </div>
+          <div class="mediService__content--box">
+            <div class="content--box3">
+              <p>클리닉</p>
+            </div>
+            <div class="content--box4">
+              <p>지원부서</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
 <script src="js/index.js"></script>

@@ -1,6 +1,7 @@
 header {
   position: fixed;
   top: 0;
+  z-index: 9999;
   width: 100%;
   background-color: #fefefe;
 }
@@ -132,7 +133,7 @@ select {
   display: flex;
   flex-direction: column;
   position: fixed;
-  top: 60px;
+  top: 50px;
   right: -600px;
   z-index: 1;
   width: 200px;
